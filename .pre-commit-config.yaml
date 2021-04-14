@@ -84,7 +84,7 @@ repos:
         additional_dependencies:
           - black
   - repo: https://github.com/antonbabenko/pre-commit-terraform
-    rev: v1.45.0
+    rev: v1.48.0
     hooks:
       - id: terraform_fmt
       - id: terraform_docs
