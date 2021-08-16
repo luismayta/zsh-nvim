@@ -96,7 +96,7 @@ repos:
         args:
           - --exclude=SC1072,SC1073,SC2068
   - repo: https://github.com/IamTheFij/docker-pre-commit
-    rev: v2.0.0
+    rev: v2.0.1
     hooks:
       - id: docker-compose-check
   - repo: local
