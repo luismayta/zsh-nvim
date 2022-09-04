@@ -1,0 +1,21 @@
+{
+  "baseUrl": "https://github.com/luismayta/zsh-nvim",
+  "ignorePatterns": [
+    {
+      "pattern": "^https://hadenlabs.com"
+    },
+    {
+      "pattern": "^https://github.com/luismayta/zsh-nvim/compare"
+    }
+  ],
+  "replacementPatterns": [
+    {
+      "pattern": "^/docs",
+      "replacement": "{{BASEURL}}/docs"
+    }
+  ],
+  "timeout": "20s",
+  "retryCount": 3,
+  "fallbackRetryDelay": "30s",
+  "aliveStatusCodes": [200, 206]
+}

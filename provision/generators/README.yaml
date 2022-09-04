@@ -1,0 +1,72 @@
+---
+#
+# This is the canonical configuration for the `README.md`
+# Run `make readme` to rebuild the `README.md`
+#
+
+# Name of this project
+name: zsh-nvim
+
+email:
+  support: support@hadenlabs.com
+
+# Logo for this project
+# logo: docs/logo.png
+
+# License of this project
+license: 'LGPL-3.0'
+
+# Canonical GitHub repo
+github_repo: luismayta/zsh-nvim
+
+# Badges to display
+badges:
+  - name: Latest Release
+    image: https://img.shields.io/github/release/luismayta/zsh-nvim
+    url: https://github.com/luismayta/zsh-nvim/releases
+  - name: Lint
+    image: https://img.shields.io/github/workflow/status/luismayta/zsh-nvim/lint-code
+    url: https://github.com/luismayta/zsh-nvim/actions?workflow=lint-code
+  - name: CI
+    image: https://img.shields.io/github/workflow/status/luismayta/zsh-nvim/ci
+    url: https://github.com/luismayta/zsh-nvim/actions?workflow=ci
+  - name: Test
+    image: https://img.shields.io/github/workflow/status/luismayta/zsh-nvim/test
+    url: https://github.com/luismayta/zsh-nvim/actions?workflow=test
+  - name: pre-commit
+    image: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
+    url: https://github.com/pre-commit/pre-commit
+  - name: Conventional Commits
+    image: https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow
+    url: https://conventionalcommits.org
+  - name: KeepAChangelog
+    image: https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.0.0-orange
+    url: https://keepachangelog.com
+
+requirements: |-
+
+  This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
+
+  * [zsh-core](https://github.com/hadenlabs/zsh-core)
+  - [gomplate](https://github.com/hairyhenderson/gomplate)
+  - [python](https://www.python.org)
+  - [taskfile](https://github.com/go-task/task)
+
+# Short description of this project
+description: |-
+
+  zsh-nvim for project
+
+installation:
+  - 'docs/include/installation/oh-my-zsh.md'
+  - 'docs/include/installation/antigen.md'
+  - 'docs/include/installation/antibody.md'
+
+usages:
+  - docs/usage.md
+
+include:
+  - 'docs/functions.md'
+
+examples:
+  - 'docs/examples/common.md'
