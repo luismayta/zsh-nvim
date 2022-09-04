@@ -1,6 +1,6 @@
 <!-- Space: Projects -->
 <!-- Parent: ZshNvim -->
-<!-- Title: Env Vars ZshNvim -->
+<!-- Title: EnvVars ZshNvim -->
 <!-- Label: ZshNvim -->
 <!-- Label: Project -->
 <!-- Label: EnvVars -->

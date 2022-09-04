@@ -22,17 +22,11 @@ github_repo: luismayta/zsh-nvim
 # Badges to display
 badges:
   - name: Latest Release
-    image: https://img.shields.io/github/release/luismayta/zsh-nvim
-    url: https://github.com/luismayta/zsh-nvim/releases
+    image: https://img.shields.io/github/release/hadenlabs/zsh-goenv
+    url: https://github.com/hadenlabs/zsh-goenv/releases
   - name: Lint
-    image: https://img.shields.io/github/workflow/status/luismayta/zsh-nvim/lint-code
-    url: https://github.com/luismayta/zsh-nvim/actions?workflow=lint-code
-  - name: CI
-    image: https://img.shields.io/github/workflow/status/luismayta/zsh-nvim/ci
-    url: https://github.com/luismayta/zsh-nvim/actions?workflow=ci
-  - name: Test
-    image: https://img.shields.io/github/workflow/status/luismayta/zsh-nvim/test
-    url: https://github.com/luismayta/zsh-nvim/actions?workflow=test
+    image: https://img.shields.io/github/workflow/status/hadenlabs/zsh-goenv/lint-code
+    url: https://github.com/hadenlabs/zsh-goenv/actions?workflow=lint-code
   - name: pre-commit
     image: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
     url: https://github.com/pre-commit/pre-commit
@@ -47,14 +41,13 @@ requirements: |-
 
   This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
-  * [zsh-core](https://github.com/hadenlabs/zsh-core)
+  - [zsh-core](https://github.com/hadenlabs/zsh-core)
   - [gomplate](https://github.com/hairyhenderson/gomplate)
   - [python](https://www.python.org)
   - [taskfile](https://github.com/go-task/task)
 
 # Short description of this project
 description: |-
-
   zsh-nvim for project
 
 installation:

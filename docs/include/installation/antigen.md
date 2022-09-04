@@ -1,7 +1,6 @@
 <!-- Space: Projects -->
 <!-- Parent: Project -->
 <!-- Title: Project Installation Antigen -->
-
 <!-- Label: ZshNvim -->
 <!-- Label: Project -->
 <!-- Label: Installation -->
