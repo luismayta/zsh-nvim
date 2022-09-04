@@ -12,7 +12,7 @@
 
   -->
 
-[![Latest Release](https://img.shields.io/github/release/luismayta/zsh-nvim)](https://github.com/luismayta/zsh-nvim/releases) [![Lint](https://img.shields.io/github/workflow/status/luismayta/zsh-nvim/lint-code)](https://github.com/luismayta/zsh-nvim/actions?workflow=lint-code) [![CI](https://img.shields.io/github/workflow/status/luismayta/zsh-nvim/ci)](https://github.com/luismayta/zsh-nvim/actions?workflow=ci) [![Test](https://img.shields.io/github/workflow/status/luismayta/zsh-nvim/test)](https://github.com/luismayta/zsh-nvim/actions?workflow=test) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.0.0-orange)](https://keepachangelog.com)
+[![Latest Release](https://img.shields.io/github/release/hadenlabs/zsh-goenv)](https://github.com/hadenlabs/zsh-goenv/releases) [![Lint](https://img.shields.io/github/workflow/status/hadenlabs/zsh-goenv/lint-code)](https://github.com/hadenlabs/zsh-goenv/actions?workflow=lint-code) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.0.0-orange)](https://keepachangelog.com)
 
 # zsh-nvim
 
@@ -23,17 +23,15 @@ zsh-nvim for project
 This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
 - [zsh-core](https://github.com/hadenlabs/zsh-core)
-
-* [gomplate](https://github.com/hairyhenderson/gomplate)
-* [python](https://www.python.org)
-* [taskfile](https://github.com/go-task/task)
+- [gomplate](https://github.com/hairyhenderson/gomplate)
+- [python](https://www.python.org)
+- [taskfile](https://github.com/go-task/task)
 
 ## Installation
 
 <!-- Space: Projects -->
 <!-- Parent: Project -->
 <!-- Title: Project Installation Oh-My-Zsh -->
-
 <!-- Label: ZshNvim -->
 <!-- Label: Project -->
 <!-- Label: Installation -->
@@ -41,9 +39,9 @@ This is a list of plugins that need to be installed previously to enjoy all the 
 <!-- Include: docs/disclaimer.md -->
 <!-- Include: ac:toc -->
 
-### [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) users
+### [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh) users
 
-If you're using [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), install this plugin by doing the following:
+If you're using [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh), install this plugin by doing the following:
 
 1.  Go to your oh-my-zsh custom plugins directory -`cd ~/.oh-my-zsh/custom/plugins`
 2.  Clone the plugin `bash git clone https://github.com/luismayta/zsh-nvim`bash
@@ -52,13 +50,12 @@ If you're using [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh), install 
     <!-- Space: Projects -->
     <!-- Parent: Project -->
     <!-- Title: Project Installation Antigen -->
-
-<!-- Label: ZshNvim -->
-<!-- Label: Project -->
-<!-- Label: Installation -->
-<!-- Label: Antigen -->
-<!-- Include: docs/disclaimer.md -->
-<!-- Include: ac:toc -->
+    <!-- Label: ZshNvim -->
+    <!-- Label: Project -->
+    <!-- Label: Installation -->
+    <!-- Label: Antigen -->
+    <!-- Include: docs/disclaimer.md -->
+    <!-- Include: ac:toc -->
 
 ### [antigen](https://github.com/zsh-users/antigen) users
 
@@ -95,6 +92,10 @@ to your `.zshrc` where you're adding your other plugins.
 
 # How to use this project
 
+```bash
+task setup
+```
+
 ## Examples
 
 <!-- Space: Projects -->
@@ -109,7 +110,6 @@ to your `.zshrc` where you're adding your other plugins.
  <!-- Space: Projects -->
 <!-- Parent: Project -->
 <!-- Title: Functions -->
-
 <!-- Label: Functions -->
 <!-- Include: docs/disclaimer.md -->
 <!-- Include: ac:toc -->
