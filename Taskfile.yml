@@ -33,7 +33,7 @@ dotenv:
 
 vars:
   PROJECT_NAME: zsh-nvim
-  ORGANIZATION: hadenlabs
+  ORGANIZATION: luismayta
   REVIEWERS: luismayta
   PYTHON_VERSION: 3.9.2
   NODE_VERSION: 16.6.1

@@ -4,3 +4,7 @@
 function nvim::upgrade {
     nvim::internal::upgrade
 }
+
+function nvim::install {
+    nvim::internal::install
+}
