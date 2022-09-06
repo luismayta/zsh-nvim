@@ -30,5 +30,5 @@ function nvim::internal::upgrade {
 }
 
 function nvim::internal::load {
-  ln -s "${NVIMRC_CUSTOM_PATH}" "${NVIM_CUSTOM_PATH}"
+ [ -e "${NVIM_CUSTOM_PATH}" ] || ln -s "${NVIMRC_CUSTOM_PATH}" "${NVIM_CUSTOM_PATH}"
 }
