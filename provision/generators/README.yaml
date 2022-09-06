@@ -22,11 +22,11 @@ github_repo: luismayta/zsh-nvim
 # Badges to display
 badges:
   - name: Latest Release
-    image: https://img.shields.io/github/release/hadenlabs/zsh-nvim
-    url: https://github.com/hadenlabs/zsh-nvim/releases
+    image: https://img.shields.io/github/release/luismayta/zsh-nvim
+    url: https://github.com/luismayta/zsh-nvim/releases
   - name: Lint
-    image: https://img.shields.io/github/workflow/status/hadenlabs/zsh-nvim/lint-code
-    url: https://github.com/hadenlabs/zsh-nvim/actions?workflow=lint-code
+    image: https://img.shields.io/github/workflow/status/luismayta/zsh-nvim/lint-code
+    url: https://github.com/luismayta/zsh-nvim/actions?workflow=lint-code
   - name: pre-commit
     image: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
     url: https://github.com/pre-commit/pre-commit
