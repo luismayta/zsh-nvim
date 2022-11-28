@@ -32,3 +32,10 @@ function nvim::internal::upgrade {
 function nvim::internal::load {
  [ -e "${NVIM_CUSTOM_PATH}" ] || ln -s "${NVIMRC_CUSTOM_PATH}" "${NVIM_CUSTOM_PATH}"
 }
+
+function nvim::internal::clean {
+  message_info "start clean configurations nvim"
+  rm -rf ~/.local/share/nvim
+  rm -rf ~/.cache/nvim
+  message_success "finish clean configurations nvim"
+}

@@ -8,3 +8,7 @@ function nvim::upgrade {
 function nvim::install {
     nvim::internal::install
 }
+
+function nvim::clean {
+    nvim::internal::clean
+}
