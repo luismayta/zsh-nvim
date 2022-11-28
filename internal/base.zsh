@@ -37,5 +37,6 @@ function nvim::internal::clean {
   message_info "start clean configurations nvim"
   rm -rf ~/.local/share/nvim
   rm -rf ~/.cache/nvim
+  rm -rf ~/.config/nvim/plugin/packer_compiled.lua
   message_success "finish clean configurations nvim"
 }
