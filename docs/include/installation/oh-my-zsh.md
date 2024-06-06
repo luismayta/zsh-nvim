@@ -1,6 +1,6 @@
 <!-- Space: Projects -->
-<!-- Parent: Project -->
-<!-- Title: Project Installation Oh-My-Zsh -->
+<!-- Parent: ZshNvim -->
+<!-- Title: Installation Oh-My-Zsh ZshNvim -->
 <!-- Label: ZshNvim -->
 <!-- Label: Project -->
 <!-- Label: Installation -->

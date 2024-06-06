@@ -54,4 +54,4 @@ You can see the corresponding projects on [zsh-nvim](https://github.com/luismayt
 
 These projects don't have an end date. They are something we'll continuously work towards.
 
-- [Better Docs](https://hadenlabs.atlassian.net/wiki)
+- [Better Docs](https://.atlassian.net/wiki)

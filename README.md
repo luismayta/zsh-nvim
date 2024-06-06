@@ -12,7 +12,7 @@
 
   -->
 
-[![Latest Release](https://img.shields.io/github/release/luismayta/zsh-nvim)](https://github.com/luismayta/zsh-nvim/releases) [![Lint](https://img.shields.io/github/workflow/status/luismayta/zsh-nvim/lint-code)](https://github.com/luismayta/zsh-nvim/actions?workflow=lint-code) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.0.0-orange)](https://keepachangelog.com)
+[![Latest Release](https://img.shields.io/github/release/luismayta/zsh-nvim)](https://github.com/luismayta/zsh-nvim/releases) [![Lint](https://img.shields.io/github/workflow/status/luismayta/zsh-nvim/lint-code)](https://github.com/luismayta/zsh-nvim/actions?workflow=lint-code) [![CI](https://img.shields.io/github/workflow/status/luismayta/zsh-nvim/ci)](https://github.com/luismayta/zsh-nvim/actions?workflow=ci) [![Test](https://img.shields.io/github/workflow/status/luismayta/zsh-nvim/test)](https://github.com/luismayta/zsh-nvim/actions?workflow=test) [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit) [![Conventional Commits](https://img.shields.io/badge/Conventional%20Commits-1.0.0-yellow)](https://conventionalcommits.org) [![KeepAChangelog](https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.0.0-orange)](https://keepachangelog.com)
 
 # zsh-nvim
 
@@ -22,7 +22,7 @@ zsh-nvim for project
 
 This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
-- [zsh-core](https://github.com/hadenlabs/zsh-core)
+- [zsh-core](https://github.com//zsh-core)
 - [gomplate](https://github.com/hairyhenderson/gomplate)
 - [python](https://www.python.org)
 - [taskfile](https://github.com/go-task/task)
@@ -30,8 +30,8 @@ This is a list of plugins that need to be installed previously to enjoy all the 
 ## Installation
 
 <!-- Space: Projects -->
-<!-- Parent: Project -->
-<!-- Title: Project Installation Oh-My-Zsh -->
+<!-- Parent: ZshNvim -->
+<!-- Title: Installation Oh-My-Zsh ZshNvim -->
 <!-- Label: ZshNvim -->
 <!-- Label: Project -->
 <!-- Label: Installation -->
@@ -48,8 +48,8 @@ If you're using [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh), install this pl
 3.  Edit your `.zshrc` and add `plugins=( ... zsh-nvim )` to your list of plugins
 4.  Open a new terminal and enjoy!
     <!-- Space: Projects -->
-    <!-- Parent: Project -->
-    <!-- Title: Project Installation Antigen -->
+    <!-- Parent: ZshNvim -->
+    <!-- Title: Installation Antigen ZshNvim -->
     <!-- Label: ZshNvim -->
     <!-- Label: Project -->
     <!-- Label: Installation -->
@@ -77,7 +77,7 @@ If you're using [Antigen](https://github.com/zsh-users/antigen), install this pl
 
 If you're using [Antibody](https://github.com/getantibody/antibody), install this plugin by doing the following:
 
-1.  Add :
+1. Add :
 
 ```{.sourceCode .bash}
 antibody bundle luismayta/zsh-nvim
@@ -105,11 +105,11 @@ task setup
 <!-- Include: ./../disclaimer.md -->
 <!-- Include: ac:toc -->
 
-### common
+### Common
 
  <!-- Space: Projects -->
-<!-- Parent: Project -->
-<!-- Title: Functions -->
+<!-- Parent: ZshNvim -->
+<!-- Title: Functions ZshNvim -->
 <!-- Label: Functions -->
 <!-- Include: docs/disclaimer.md -->
 <!-- Include: ac:toc -->
@@ -143,7 +143,7 @@ Using the given version number of `MAJOR.MINOR.PATCH`, we apply the following co
 
 ## Copyright
 
-Copyright © 2018-2022 [Hadenlabs](https://hadenlabs.com)
+Copyright © 2018-2024 [Hadenlabs](https://.com)
 
 ## Trademarks
 

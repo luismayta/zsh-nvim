@@ -14,7 +14,7 @@ email:
 # logo: docs/logo.png
 
 # License of this project
-license: 'LGPL-3.0'
+license: "LGPL-3.0"
 
 # Canonical GitHub repo
 github_repo: luismayta/zsh-nvim
@@ -27,6 +27,12 @@ badges:
   - name: Lint
     image: https://img.shields.io/github/workflow/status/luismayta/zsh-nvim/lint-code
     url: https://github.com/luismayta/zsh-nvim/actions?workflow=lint-code
+  - name: CI
+    image: https://img.shields.io/github/workflow/status/luismayta/zsh-nvim/ci
+    url: https://github.com/luismayta/zsh-nvim/actions?workflow=ci
+  - name: Test
+    image: https://img.shields.io/github/workflow/status/luismayta/zsh-nvim/test
+    url: https://github.com/luismayta/zsh-nvim/actions?workflow=test
   - name: pre-commit
     image: https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white
     url: https://github.com/pre-commit/pre-commit
@@ -41,7 +47,7 @@ requirements: |-
 
   This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
-  - [zsh-core](https://github.com/hadenlabs/zsh-core)
+  - [zsh-core](https://github.com//zsh-core)
   - [gomplate](https://github.com/hairyhenderson/gomplate)
   - [python](https://www.python.org)
   - [taskfile](https://github.com/go-task/task)
@@ -51,15 +57,15 @@ description: |-
   zsh-nvim for project
 
 installation:
-  - 'docs/include/installation/oh-my-zsh.md'
-  - 'docs/include/installation/antigen.md'
-  - 'docs/include/installation/antibody.md'
+  - "docs/include/installation/oh-my-zsh.md"
+  - "docs/include/installation/antigen.md"
+  - "docs/include/installation/antibody.md"
 
 usages:
   - docs/usage.md
 
 include:
-  - 'docs/functions.md'
+  - "docs/functions.md"
 
 examples:
-  - 'docs/examples/common.md'
+  - "docs/examples/common.md"

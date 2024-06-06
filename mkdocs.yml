@@ -1,5 +1,5 @@
 site_name: zsh-nvim Documentation
-theme: 'material'
+theme: "material"
 markdown_extensions:
   - toc:
       permalink: True
@@ -10,15 +10,15 @@ markdown_extensions:
       linenums: True
 extra:
   palette:
-    primary: '#087da1'
-    accent: '#00a889'
+    primary: "#087da1"
+    accent: "#00a889"
   font:
-    text: 'Source Sans Pro'
+    text: "Source Sans Pro"
 
-repo_name: 'luismayta/zsh-nvim'
-repo_url: 'https://github.com/luismayta/zsh-nvim'
-copyright: 'Copyright © 2020 <a href="https://hadenlabs.com">hadenlabs</a>'
+repo_name: "luismayta/zsh-nvim"
+repo_url: "https://github.com/luismayta/zsh-nvim"
+copyright: 'Copyright © 2020 <a href="https://.com"></a>'
 
 google_analytics:
-  - ''
-  - 'auto'
+  - ""
+  - "auto"

@@ -2,10 +2,7 @@
   "baseUrl": "https://github.com/luismayta/zsh-nvim",
   "ignorePatterns": [
     {
-      "pattern": "^https://hadenlabs.com"
-    },
-    {
-      "pattern": "^https://github.com/luismayta/zsh-nvim/compare"
+      "pattern": "^https://.com"
     }
   ],
   "replacementPatterns": [

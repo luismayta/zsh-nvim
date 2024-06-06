@@ -1,4 +1,4 @@
-version: '3'
+version: "3"
 
 tasks:
   check:
@@ -12,36 +12,40 @@ tasks:
     run: once
     preconditions:
       - sh: command -v docker
-        msg: 'Please Install docker'
+        msg: "Please Install docker"
 
   check:vars:
     desc: Exist vars for docker
     run: once
     preconditions:
-      - sh: test -v DOCKERHUB_USERNAME
-        msg: 'Please add var environment DOCKERHUB_USERNAME'
-      - sh: test -v DOCKERHUB_TOKEN
-        msg: 'Please add var environment DOCKERHUB_TOKEN'
+      - sh: test -v CI_REGISTRY_USER
+        msg: "Please add var environment CI_REGISTRY_USER"
+      - sh: test -v CI_REGISTRY_PASSWORD
+        msg: "Please add var environment CI_REGISTRY_PASSWORD"
+      - sh: test -v CI_REGISTRY
+        msg: "Please add var environment CI_REGISTRY"
 
   login:
     silent: true
     deps:
-      - task: check:vars
+      - task: check
     cmds:
-      - echo "Logging in to DockerHub"
+      - echo "Logging in to {{.CI_REGISTRY}}"
       - >-
-        docker login -u {{.DOCKERHUB_USERNAME}} -p {{.DOCKERHUB_TOKEN}} 2> /dev/null
+        echo -n {{.CI_REGISTRY_PASSWORD}} | docker login -u {{.CI_REGISTRY_USER}} --password-stdin {{.CI_REGISTRY}}
 
   build:
     desc: Build Image.
     run: once
     deps:
-      - task: check:docker
+      - task: login
     cmds:
       - >-
-        docker buildx build --platform={{.DOCKER_PLATFORMS}}
+        docker build
+        --no-cache
+        --platform={{.DOCKER_PLATFORM}}
         --file Dockerfile
-        --tag {{.DOCKER_ORGANIZATION}}/{{.DOCKER_IMAGE_NAME}}:{{.APP_TAG}} .
+        --tag {{.CI_REGISTRY}}/{{.GROUP_NAME}}/{{.PROJECT_NAME}}:{{.APP_TAG}} .
         --build-arg VERSION={{.APP_TAG}}
 
   publish:
@@ -53,8 +57,8 @@ tasks:
       - >-
         docker buildx build
         --no-cache
-        --platform={{.DOCKER_PLATFORMS}}
+        --platform={{.DOCKER_PLATFORM}}
         --file Dockerfile
-        --tag {{.DOCKER_ORGANIZATION}}/{{.DOCKER_IMAGE_NAME}}:{{.APP_TAG}} .
+        --tag {{.CI_REGISTRY}}/{{.GROUP_NAME}}/{{.PROJECT_NAME}}:{{.APP_TAG}} .
         --build-arg VERSION={{.APP_TAG}}
         --push

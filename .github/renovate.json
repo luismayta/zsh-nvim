@@ -1,5 +1,5 @@
 {
-  "extends": ["github>hadenlabs/renovate-config"],
+  "extends": ["github>/renovate-config"],
   "packageRules": [
     {
       "matchDepTypes": ["devDependencies"],

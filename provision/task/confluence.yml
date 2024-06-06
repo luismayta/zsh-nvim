@@ -1,6 +1,6 @@
 # https://taskfile.dev
 
-version: '3'
+version: "3"
 
 tasks:
   default:
@@ -22,18 +22,18 @@ tasks:
     run: once
     preconditions:
       - sh: command -v docker
-        msg: 'Please Install docker'
+        msg: "Please Install docker"
 
   check:vars:
     desc: Exist vars for mark
     run: once
     preconditions:
       - sh: test -v CONFLUENCE_BASE_URL
-        msg: 'Please add var environment CONFLUENCE_BASE_URL'
+        msg: "Please add var environment CONFLUENCE_BASE_URL"
       - sh: test -v CONFLUENCE_ACCESS_TOKEN
-        msg: 'Please add var environment CONFLUENCE_ACCESS_TOKEN'
+        msg: "Please add var environment CONFLUENCE_ACCESS_TOKEN"
       - sh: test -v CONFLUENCE_USER
-        msg: 'Please add var environment CONFLUENCE_USER'
+        msg: "Please add var environment CONFLUENCE_USER"
 
   make:credentials:
     desc: run sync mark.
@@ -80,9 +80,9 @@ tasks:
         vars:
           FILES_CONFLUENCE:
             sh: >-
-              find ./ -type f -name '*.md' -print
+              find ./docs -type f -name '*.md' -print
               | grep -v '.tpl.md'
-              | grep -v '.terraform'
+              | grep -v '^.terraform'
               | xargs grep '<!-- Space'
               | cut -d : -f 1
               | sed -r 's/.\/\///g'
@@ -122,7 +122,7 @@ tasks:
               git diff main HEAD --name-only
               | grep '.md'
               | grep -v '.tpl.md'
-              | grep -v '.terraform'
+              | grep -v '^.terraform'
               | xargs grep '<!-- Space'
               | cut -d : -f 1
               | sed -r 's/.\/\///g'
@@ -142,7 +142,7 @@ tasks:
               git diff master HEAD --name-only
               | grep '.md'
               | grep -v '.tpl.md'
-              | grep -v '.terraform'
+              | grep -v '^.terraform'
               | xargs grep '<!-- Space'
               | cut -d : -f 1
               | sed -r 's/.\/\///g'

@@ -1,0 +1,43 @@
+[tool.poetry]
+version = "0.0.0"
+name = "zsh-nvim"
+description = "zsh nvm"
+authors = ["Luis Mayta <luis@hadenlabs.com>"]
+license = "LGPL-3.0"
+readme = "README.md"
+repository = "https://github.com/luismayta/zsh-nvim"
+
+[tool.poetry.dependencies]
+python = "^3.8,<3.12"
+boto3 = "^1.26.130"
+
+[tool.poetry.group.dev.dependencies]
+requests = "^2.28.2"
+bridgecrew = "*"
+doc8 = "*"
+grip = "*"
+isort = "*"
+mkdocs = "*"
+mkdocs-material = "*"
+mypy = "*"
+parso = "*"
+pre-commit = "*"
+pycodestyle = "*"
+pydocstyle = "*"
+pygments = "*"
+pylint = "*"
+pymdown-extensions = "*"
+pytest = ">=6.2.4"
+black = "*"
+bumpversion = "*"
+
+[tool.poetry.extras]
+docs = ["mkdocs", "mkdocs-material"]
+
+[tool.poetry_bumpversion.file."sonar-project.properties"]
+search = 'sonar.projectVersion={current_version}'
+replace = 'sonar.projectVersion={new_version}'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
