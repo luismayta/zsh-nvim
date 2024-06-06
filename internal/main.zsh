@@ -20,7 +20,4 @@ nvim::internal::main::factory
 
 if ! core::exists rsync > /dev/null; then core::install rsync; fi
 if ! core::exists nvim > /dev/null; then core::install nvim; fi
-[ -e "${NVIM_CONFIG_PATH}" ] || nvim::internal::nvchad::install
-[ -e "${NVIMRC_PATH}" ] || nvim::internal::install
-
-nvim::internal::load
+[ -e "${NVIM_CONFIG_PATH}" ] || nvim::internal::install
