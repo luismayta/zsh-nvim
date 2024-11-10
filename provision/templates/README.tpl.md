@@ -168,7 +168,7 @@ Using the given version number of `MAJOR.MINOR.PATCH`, we apply the following co
 
 ## Copyright
 
-Copyright © 2018-{{ time.Now.Year }} [Hadenlabs](https://.com)
+Copyright © 2018-{{ time.Now.Year }} [Hadenlabs](https://hadenlabs.com)
 {{ end}}
 
 

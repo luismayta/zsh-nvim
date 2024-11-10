@@ -1,7 +1,7 @@
 <!-- Space: Projects -->
 <!-- Parent: ZshNvim -->
 <!-- Title: Contributing GithubFlow ZshNvim -->
-<!-- Label: ZshNvim -->
+<!-- Label: BaseTemplate -->
 <!-- Label: Project -->
 <!-- Label: Contributing -->
 <!-- Label: GithubFlow -->
@@ -34,7 +34,7 @@ To synchronize with the main repository, add it to the remotes:
 git remote add upstream  https://github.com/luismayta/zsh-nvim.git
 ```
 
-Now your **upstream** points to **/zsh-nvim**.
+Now your **upstream** points to **luismayta/zsh-nvim**.
 
 ## Branches
 
@@ -58,7 +58,7 @@ To resolve a conflict, run the following commands.
 
 ```bash
 # checkout a branch you open PR from
-git fetch upstream # assuming upstream is /zsh-nvim
+git fetch upstream # assuming upstream is luismayta/zsh-nvim
 git merge upstream/merge_branch # Where merge_branch is a branch you open merge request against.
 # resolve merge requests
 git add changed_files
