@@ -37,19 +37,24 @@ vars:
   ORGANIZATION: luismayta
   DOCKER_PLATFORM: linux/amd64
   REVIEWERS: luismayta
-  PYTHON_VERSION: 3.11.7
+  PYTHON_VERSION: 3.11.5
   NODE_VERSION: 18.18.2
   TERRAFORM_VERSION: 1.8.4
   GIT_IGNORES: python,node,go,zsh,sonar,java,maven,intellij+all,terraform,linux
   GOLANGCI_VERSION: 1.42.0
   README_FILE: README.md
-  GIT_IGNORES_CUSTOM: >-
+  GIT_IGNORES_CUSTOM: |
     bin
     .scannerwork
     .secrets
+    public
     TMP_CHANGELOG.md
     .task
+    .terraform.lock.hcl
     *.lock.hcl
+    *.zip
+    .external_modules
+    vendor
 
 tasks:
   default:
@@ -113,6 +118,12 @@ tasks:
       - task: python:setup
       - task: python:precommit
       - task: git:setup
+
+  test:
+    run: once
+    desc: Execute task test all
+    cmds:
+      - task: go:test
 
   environment:
     desc: Setup environment of project

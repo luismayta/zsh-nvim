@@ -1,6 +1,6 @@
 # This is an example goreleaser.yaml file with some sane defaults.
 # Make sure to check the documentation at http://goreleaser.com
-project_name: zsh-plugin-name
+project_name: zsh-nvim
 env:
   - GO111MODULE=on
   - REPO=github.com/luismayta/zsh-nvim
@@ -66,8 +66,8 @@ changelog:
       - "^test:"
 release:
   github:
-    owner:
-    name: zsh-plugin-name
+    owner: hadenlabs
+    name: zsh-nvim
   draft: true
   prerelease: auto
   name_template: "{{.ProjectName}}-v{{.Version}}-{{.ShortCommit}}-{{.Date}}"

@@ -24,6 +24,6 @@ tasks:
         --rm
         --workdir /data
         -v $(pwd):/data
-        /plantuml {{.CLI_ARGS}}
+        hadenlabs/plantuml {{.CLI_ARGS}}
     deps:
       - task: check
