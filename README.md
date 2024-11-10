@@ -16,13 +16,13 @@
 
 # zsh-nvim
 
-zsh-nvim for project
+zsh-nvim for zsh
 
 ## Requirements
 
 This is a list of plugins that need to be installed previously to enjoy all the goodies of this configuration:
 
-- [zsh-core](https://github.com//zsh-core)
+- [zsh-core](https://github.com/hadenlabs/zsh-core)
 - [gomplate](https://github.com/hairyhenderson/gomplate)
 - [python](https://www.python.org)
 - [taskfile](https://github.com/go-task/task)
@@ -65,8 +65,8 @@ If you're using [Antigen](https://github.com/zsh-users/antigen), install this pl
 2.  Either open a new terminal to force zsh to load the new plugin, or run `antigen bundle luismayta/zsh-nvim` in a running zsh session.
 3.  Enjoy!
     <!-- Space: Projects -->
-    <!-- Parent: Project -->
-    <!-- Title: Project Installation Antibody -->
+    <!-- Parent: ZshNvim -->
+    <!-- Title: Installation Antibody ZshNvim -->
     <!-- Label: ZshNvim -->
     <!-- Label: Project -->
     <!-- Label: Installation -->
@@ -143,7 +143,7 @@ Using the given version number of `MAJOR.MINOR.PATCH`, we apply the following co
 
 ## Copyright
 
-Copyright © 2018-2024 [Hadenlabs](https://.com)
+Copyright © 2018-2024 [Hadenlabs](https://hadenlabs.com)
 
 ## Trademarks
 
