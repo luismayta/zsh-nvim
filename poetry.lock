@@ -251,13 +251,13 @@ dev = ["freezegun (>=1.0,<2.0)", "pytest (>=6.0)", "pytest-cov"]
 
 [[package]]
 name = "bc-detect-secrets"
-version = "1.5.21"
+version = "1.5.22"
 description = "Tool for detecting secrets in the codebase"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "bc_detect_secrets-1.5.21-py3-none-any.whl", hash = "sha256:ad8b9a7f504482f04c8ff0b4471e087ebf46e06c722bac0792336e98c2ed334c"},
-    {file = "bc_detect_secrets-1.5.21.tar.gz", hash = "sha256:b0c62b688b58fb9f9176ab44783e4a4b5812813c65f50ddf985f1848237700bc"},
+    {file = "bc_detect_secrets-1.5.22-py3-none-any.whl", hash = "sha256:785f567f4b9008a54a62317b59506f002fa8125ed50df25cc6e1e99cc9027c9d"},
+    {file = "bc_detect_secrets-1.5.22.tar.gz", hash = "sha256:74c2be955beb0fb708b8ccc5fcf30a2a803751126c1a1483bf6b0b95e1dad338"},
 ]
 
 [package.dependencies]
@@ -407,17 +407,17 @@ files = [
 
 [[package]]
 name = "boto3"
-version = "1.34.25"
+version = "1.35.49"
 description = "The AWS SDK for Python"
 optional = false
-python-versions = ">= 3.8"
+python-versions = ">=3.8"
 files = [
-    {file = "boto3-1.34.25-py3-none-any.whl", hash = "sha256:87532469188f1eeef4dca67dffbd3f0cc1d51cef7d5e5b5dc95d3b8125f8446e"},
-    {file = "boto3-1.34.25.tar.gz", hash = "sha256:1b415e0553679ea05b9e2aed3eb271431011a67a165e3e0aefa323e13b8b7e92"},
+    {file = "boto3-1.35.49-py3-none-any.whl", hash = "sha256:b660c649a27a6b47a34f6f858f5bd7c3b0a798a16dec8dda7cbebeee80fd1f60"},
+    {file = "boto3-1.35.49.tar.gz", hash = "sha256:ddecb27f5699ca9f97711c52b6c0652c2e63bf6c2bfbc13b819b4f523b4d30ff"},
 ]
 
 [package.dependencies]
-botocore = ">=1.34.25,<1.35.0"
+botocore = ">=1.35.49,<1.36.0"
 jmespath = ">=0.7.1,<2.0.0"
 s3transfer = ">=0.10.0,<0.11.0"
 
@@ -426,13 +426,13 @@ crt = ["botocore[crt] (>=1.21.0,<2.0a0)"]
 
 [[package]]
 name = "botocore"
-version = "1.34.25"
+version = "1.35.60"
 description = "Low-level, data-driven core of boto 3."
 optional = false
-python-versions = ">= 3.8"
+python-versions = ">=3.8"
 files = [
-    {file = "botocore-1.34.25-py3-none-any.whl", hash = "sha256:35dfab5bdb4620f73ac7c557c4e0d012429706d8760b100f099feea34b5505f8"},
-    {file = "botocore-1.34.25.tar.gz", hash = "sha256:a39070bb760bd9545b0eef52a8bcb2d03918206e67a5a786ea4bd6f4bd949edd"},
+    {file = "botocore-1.35.60-py3-none-any.whl", hash = "sha256:ddccfc39a0a55ac0321191a36d29c2ea9be2c96ceefb3928dd3c91c79c494d50"},
+    {file = "botocore-1.35.60.tar.gz", hash = "sha256:378f53037d817bed2c04a006b7319745e664030182211429c924647273b29bc9"},
 ]
 
 [package.dependencies]
@@ -440,25 +440,25 @@ jmespath = ">=0.7.1,<2.0.0"
 python-dateutil = ">=2.1,<3.0.0"
 urllib3 = [
     {version = ">=1.25.4,<1.27", markers = "python_version < \"3.10\""},
-    {version = ">=1.25.4,<2.1", markers = "python_version >= \"3.10\""},
+    {version = ">=1.25.4,<2.2.0 || >2.2.0,<3", markers = "python_version >= \"3.10\""},
 ]
 
 [package.extras]
-crt = ["awscrt (==0.19.19)"]
+crt = ["awscrt (==0.22.0)"]
 
 [[package]]
 name = "bridgecrew"
-version = "3.2.287"
+version = "3.2.293"
 description = "Infrastructure as code static analysis"
 optional = false
 python-versions = "*"
 files = [
-    {file = "bridgecrew-3.2.287-py3-none-any.whl", hash = "sha256:7781d30f205942ebb98692759f1a971a09757ea9ed58bb61a054bd4b5ce9fb5c"},
-    {file = "bridgecrew-3.2.287.tar.gz", hash = "sha256:e116625ec92574217f6950e14921a532ef841b4c2310fdac135e3bd15291f525"},
+    {file = "bridgecrew-3.2.293-py3-none-any.whl", hash = "sha256:18b5af565b972e8e93e2477aefd9daa4f4597475ac2cf253a6afd2ac28c773f8"},
+    {file = "bridgecrew-3.2.293.tar.gz", hash = "sha256:83ab163d6d1ef98b4bb765219d6e704da949ea4c60d95e56e1cd073b45e098da"},
 ]
 
 [package.dependencies]
-checkov = "3.2.287"
+checkov = "3.2.293"
 
 [[package]]
 name = "cached-property"
@@ -699,13 +699,13 @@ files = [
 
 [[package]]
 name = "checkov"
-version = "3.2.287"
+version = "3.2.293"
 description = "Infrastructure as code static analysis"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "checkov-3.2.287-py3-none-any.whl", hash = "sha256:c26f07a1d5c921111804146b94cd1bd5d261ce809d705ba05e76ead898ecbee9"},
-    {file = "checkov-3.2.287.tar.gz", hash = "sha256:ce06f57384ce8d6c4f00a259fdaad44ce9d993c0c049e621789808757b27565e"},
+    {file = "checkov-3.2.293-py3-none-any.whl", hash = "sha256:b867326675cafb70db15e862ca35daffb1af7c7fa6f697b45140e0fe8b925b61"},
+    {file = "checkov-3.2.293.tar.gz", hash = "sha256:82e2ba02d3d9366e5e6f3c1acfc437bd9d29ea61079b55ae461d17f841b66131"},
 ]
 
 [package.dependencies]
@@ -713,11 +713,10 @@ aiodns = ">=3.0.0,<4.0.0"
 aiohttp = ">=3.8.0,<4.0.0"
 aiomultiprocess = ">=0.9.0,<0.10.0"
 argcomplete = ">=3.0.0,<4.0.0"
-bc-detect-secrets = "1.5.21"
+bc-detect-secrets = "1.5.22"
 bc-jsonpath-ng = "1.6.1"
 bc-python-hcl2 = "0.4.2"
-boto3 = "1.34.25"
-botocore = "1.34.25"
+boto3 = "1.35.49"
 cachetools = ">=5.2.0,<6.0.0"
 charset-normalizer = ">=3.1.0,<4.0.0"
 click = ">=8.1.0,<9.0.0"
@@ -752,7 +751,6 @@ tabulate = ">=0.9.0,<0.10.0"
 termcolor = ">=1.1.0,<2.4.0"
 tqdm = ">=4.65.0,<5.0.0"
 typing-extensions = ">=4.5.0,<5.0.0"
-urllib3 = "*"
 yarl = ">=1.9.1,<2.0.0"
 
 [package.extras]
