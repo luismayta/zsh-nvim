@@ -178,6 +178,23 @@ files = [
 test = ["coverage", "mypy", "pexpect", "ruff", "wheel"]
 
 [[package]]
+name = "asteval"
+version = "1.0.5"
+description = "Safe, minimalistic evaluator of python expression using ast module"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "asteval-1.0.5-py3-none-any.whl", hash = "sha256:082b95312578affc8a6d982f7d92b7ac5de05634985c87e7eedd3188d31149fa"},
+    {file = "asteval-1.0.5.tar.gz", hash = "sha256:bac3c8dd6d2b789e959cfec9bb296fb8338eec066feae618c462132701fbc665"},
+]
+
+[package.extras]
+all = ["asteval[dev,doc,test]"]
+dev = ["build", "twine"]
+doc = ["Sphinx"]
+test = ["coverage", "pytest", "pytest-cov"]
+
+[[package]]
 name = "astroid"
 version = "3.3.8"
 description = "An abstract syntax tree for Python with inference support."
@@ -237,13 +254,13 @@ dev = ["freezegun (>=1.0,<2.0)", "pytest (>=6.0)", "pytest-cov"]
 
 [[package]]
 name = "bc-detect-secrets"
-version = "1.5.40"
+version = "1.5.45"
 description = "Tool for detecting secrets in the codebase"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "bc_detect_secrets-1.5.40-py3-none-any.whl", hash = "sha256:05cf26afcddf6296e09b16f498475b4adc026696bfe2ce50a1a916f88d14aca3"},
-    {file = "bc_detect_secrets-1.5.40.tar.gz", hash = "sha256:5982369c359ef58379a8234168a3820d9273cdc0776dcc0efe6904c2a37c51d8"},
+    {file = "bc_detect_secrets-1.5.45-py3-none-any.whl", hash = "sha256:33119be81d2eca91ccf2eabc496737dcb079c581aa4646a0475f5e0619e382d5"},
+    {file = "bc_detect_secrets-1.5.45.tar.gz", hash = "sha256:f05cc539d1865d6f8d65cbd51968e85ec570ee1375447a5a29a5623ca8ea9f2b"},
 ]
 
 [package.dependencies]
@@ -272,13 +289,13 @@ ply = "*"
 
 [[package]]
 name = "bc-python-hcl2"
-version = "0.4.2"
+version = "0.4.3"
 description = "A parser for HCL2"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "bc-python-hcl2-0.4.2.tar.gz", hash = "sha256:ac8ff59fb9bd437ea29b89a7d7c507fd0a1e957845bae9aeac69f2892b8d681e"},
-    {file = "bc_python_hcl2-0.4.2-py3-none-any.whl", hash = "sha256:90d2afbaa2c7e77b7b30bf58180084e11d95287f7c3e19c5bfbdb54ab2fd80e9"},
+    {file = "bc_python_hcl2-0.4.3-py3-none-any.whl", hash = "sha256:b0cce4cea16823f7da7fefa0f8177dfb91f51a1befe64ef59d8fe4d5ac616eec"},
+    {file = "bc_python_hcl2-0.4.3.tar.gz", hash = "sha256:fae62b2a41a675ad330d134d82576526db755f72bbd0e5a850de3d85fc24c40e"},
 ]
 
 [package.dependencies]
@@ -434,17 +451,17 @@ crt = ["awscrt (==0.22.0)"]
 
 [[package]]
 name = "bridgecrew"
-version = "3.2.403"
+version = "3.2.470"
 description = "Infrastructure as code static analysis"
 optional = false
 python-versions = "*"
 files = [
-    {file = "bridgecrew-3.2.403-py3-none-any.whl", hash = "sha256:130d14d4463fae93ec8542e06c8bec860aba6b32d0674398a330fbfe7913d6f0"},
-    {file = "bridgecrew-3.2.403.tar.gz", hash = "sha256:6888a2bc9f26d2454c0f63454d3b35a1f0cb60865413ea11ea0fe86983489d1f"},
+    {file = "bridgecrew-3.2.470-py3-none-any.whl", hash = "sha256:932a0b4b3c0132be1483d4d0203da0980008fbb8fbfe921e03d57e241798b8e6"},
+    {file = "bridgecrew-3.2.470.tar.gz", hash = "sha256:1f32e14606d49625a443ddfdcb30db2e82ce3ef68a277063b3f3ffaa2323a41a"},
 ]
 
 [package.dependencies]
-checkov = "3.2.403"
+checkov = "3.2.470"
 
 [[package]]
 name = "cached-property"
@@ -685,13 +702,13 @@ files = [
 
 [[package]]
 name = "checkov"
-version = "3.2.403"
+version = "3.2.470"
 description = "Infrastructure as code static analysis"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "checkov-3.2.403-py3-none-any.whl", hash = "sha256:90affe90e8cce2ad11fbd10e76ba1b7ff58659cd3d89b67782878b0c32ad463e"},
-    {file = "checkov-3.2.403.tar.gz", hash = "sha256:54fc255d83ae9e0762f451ee9cf120962f660690cd0483dad3c9a0c8eeabbc59"},
+    {file = "checkov-3.2.470-py3-none-any.whl", hash = "sha256:c211f7a9a35da44963ba4654c7c61bc3c3166dbf315f7d2cbdbac210a68ef4c3"},
+    {file = "checkov-3.2.470.tar.gz", hash = "sha256:7a2630753bf0c491d75359b11c805a705a3b66b1ab44328ec196c7b252d1a5ce"},
 ]
 
 [package.dependencies]
@@ -699,9 +716,10 @@ aiodns = ">=3.0.0,<4.0.0"
 aiohttp = ">=3.8.0,<4.0.0"
 aiomultiprocess = ">=0.9.0,<0.10.0"
 argcomplete = ">=3.0.0,<4.0.0"
-bc-detect-secrets = "1.5.40"
+asteval = "1.0.5"
+bc-detect-secrets = "1.5.45"
 bc-jsonpath-ng = "1.6.1"
-bc-python-hcl2 = "0.4.2"
+bc-python-hcl2 = "0.4.3"
 boto3 = "1.35.49"
 cachetools = ">=5.2.0,<6.0.0"
 charset-normalizer = ">=3.1.0,<4.0.0"
@@ -720,7 +738,6 @@ jsonschema = ">=4.17.0,<5.0.0"
 junit-xml = ">=1.9,<2.0"
 license-expression = ">=30.1.0,<31.0.0"
 networkx = "<2.7"
-openai = "<1.0.0"
 packageurl-python = ">=0.11.1,<0.14.0"
 packaging = ">=23.0,<24.0"
 prettytable = ">=3.6.0,<4.0.0"
@@ -737,6 +754,7 @@ tabulate = ">=0.9.0,<0.10.0"
 termcolor = ">=1.1.0,<2.4.0"
 tqdm = ">=4.65.0,<5.0.0"
 typing-extensions = ">=4.5.0,<5.0.0"
+urllib3 = "1.26.20"
 yarl = ">=1.9.1,<2.0.0"
 
 [package.extras]
@@ -1868,28 +1886,6 @@ files = [
     {file = "numpy-2.0.2-pp39-pypy39_pp73-win_amd64.whl", hash = "sha256:a46288ec55ebbd58947d31d72be2c63cbf839f0a63b49cb755022310792a3385"},
     {file = "numpy-2.0.2.tar.gz", hash = "sha256:883c987dee1880e2a864ab0dc9892292582510604156762362d9326444636e78"},
 ]
-
-[[package]]
-name = "openai"
-version = "0.28.1"
-description = "Python client library for the OpenAI API"
-optional = false
-python-versions = ">=3.7.1"
-files = [
-    {file = "openai-0.28.1-py3-none-any.whl", hash = "sha256:d18690f9e3d31eedb66b57b88c2165d760b24ea0a01f150dd3f068155088ce68"},
-    {file = "openai-0.28.1.tar.gz", hash = "sha256:4be1dad329a65b4ce1a660fe6d5431b438f429b5855c883435f0f7fcb6d2dcc8"},
-]
-
-[package.dependencies]
-aiohttp = "*"
-requests = ">=2.20"
-tqdm = "*"
-
-[package.extras]
-datalib = ["numpy", "openpyxl (>=3.0.7)", "pandas (>=1.2.3)", "pandas-stubs (>=1.1.0.11)"]
-dev = ["black (>=21.6b0,<22.0)", "pytest (==6.*)", "pytest-asyncio", "pytest-mock"]
-embeddings = ["matplotlib", "numpy", "openpyxl (>=3.0.7)", "pandas (>=1.2.3)", "pandas-stubs (>=1.1.0.11)", "plotly", "scikit-learn (>=1.0.2)", "scipy", "tenacity (>=8.0.1)"]
-wandb = ["numpy", "openpyxl (>=3.0.7)", "pandas (>=1.2.3)", "pandas-stubs (>=1.1.0.11)", "wandb"]
 
 [[package]]
 name = "orjson"
@@ -3452,23 +3448,6 @@ files = [
 brotli = ["brotli (==1.0.9)", "brotli (>=1.0.9)", "brotlicffi (>=0.8.0)", "brotlipy (>=0.6.0)"]
 secure = ["certifi", "cryptography (>=1.3.4)", "idna (>=2.0.0)", "ipaddress", "pyOpenSSL (>=0.14)", "urllib3-secure-extra"]
 socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
-
-[[package]]
-name = "urllib3"
-version = "2.2.3"
-description = "HTTP library with thread-safe connection pooling, file post, and more."
-optional = false
-python-versions = ">=3.8"
-files = [
-    {file = "urllib3-2.2.3-py3-none-any.whl", hash = "sha256:ca899ca043dcb1bafa3e262d73aa25c465bfb49e0bd9dd5d59f1d0acba2f8fac"},
-    {file = "urllib3-2.2.3.tar.gz", hash = "sha256:e7d814a81dad81e6caf2ec9fdedb284ecc9c73076b62654547cc64ccdcae26e9"},
-]
-
-[package.extras]
-brotli = ["brotli (>=1.0.9)", "brotlicffi (>=0.8.0)"]
-h2 = ["h2 (>=4,<5)"]
-socks = ["pysocks (>=1.5.6,!=1.5.7,<2.0)"]
-zstd = ["zstandard (>=0.18.0)"]
 
 [[package]]
 name = "virtualenv"
